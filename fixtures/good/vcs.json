@@ -1,0 +1,11 @@
+{
+  "name": "expense-tracker",
+  "owner": "ops@company.com",
+  "scopes": [
+    "expenses:read",
+    "expenses:write"
+  ],
+  "connectors": [
+    "api.company.internal"
+  ]
+}

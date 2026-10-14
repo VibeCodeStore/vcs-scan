@@ -1,0 +1,17 @@
+{
+  "name": "@vcs/scan",
+  "version": "0.1.0",
+  "description": "Security checks and a 0-100 score for AI-written apps.",
+  "type": "module",
+  "bin": {
+    "vcs-scan": "bin/vcs-scan.js"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node --test"
+  },
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=20"
+  }
+}

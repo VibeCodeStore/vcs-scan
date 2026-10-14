@@ -1,0 +1,6 @@
+{
+  "name": "quick-tool",
+  "scopes": [
+    "payouts:*"
+  ]
+}

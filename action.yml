@@ -1,0 +1,17 @@
+name: VCS security scan
+description: Score an AI-written app and block merges below the bar.
+inputs:
+  path:
+    description: App directory
+    default: .
+  bar:
+    description: Minimum score to pass
+    default: '80'
+runs:
+  using: composite
+  steps:
+    - uses: actions/setup-node@v4
+      with:
+        node-version: 22
+    - shell: bash
+      run: node ${{ github.action_path }}/bin/vcs-scan.js "${{ inputs.path }}" --bar=${{ inputs.bar }}
